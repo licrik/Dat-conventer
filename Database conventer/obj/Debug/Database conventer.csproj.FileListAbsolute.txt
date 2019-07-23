@@ -1,0 +1,30 @@
+C:\Users\maxku\source\repos\Database conventer\Database conventer\bin\Debug\Database conventer.exe.config
+C:\Users\maxku\source\repos\Database conventer\Database conventer\bin\Debug\Database conventer.exe
+C:\Users\maxku\source\repos\Database conventer\Database conventer\bin\Debug\Database conventer.pdb
+C:\Users\maxku\source\repos\Database conventer\Database conventer\obj\Debug\MainWindow.g.cs
+C:\Users\maxku\source\repos\Database conventer\Database conventer\obj\Debug\App.g.cs
+C:\Users\maxku\source\repos\Database conventer\Database conventer\obj\Debug\Database conventer_MarkupCompile.cache
+C:\Users\maxku\source\repos\Database conventer\Database conventer\obj\Debug\Database conventer_MarkupCompile.lref
+C:\Users\maxku\source\repos\Database conventer\Database conventer\obj\Debug\MainWindow.baml
+C:\Users\maxku\source\repos\Database conventer\Database conventer\obj\Debug\Database conventer.g.resources
+C:\Users\maxku\source\repos\Database conventer\Database conventer\obj\Debug\Database_conventer.Properties.Resources.resources
+C:\Users\maxku\source\repos\Database conventer\Database conventer\obj\Debug\Database conventer.csproj.GenerateResource.cache
+C:\Users\maxku\source\repos\Database conventer\Database conventer\obj\Debug\Database conventer.csproj.CoreCompileInputs.cache
+C:\Users\maxku\source\repos\Database conventer\Database conventer\obj\Debug\Database conventer.exe
+C:\Users\maxku\source\repos\Database conventer\Database conventer\obj\Debug\Database conventer.pdb
+C:\Users\maxku\source\repos\Database conventer\Database conventer\obj\Debug\Windows\LogsWindows.g.cs
+C:\Users\maxku\source\repos\Database conventer\Database conventer\obj\Debug\Windows\LogsWindows.baml
+C:\Users\maxku\source\repos\Database conventer\Database conventer\bin\Debug\UserDbStorage.sdf
+C:\Users\maxku\source\repos\Database conventer\Database conventer\bin\Debug\EntityFramework.dll
+C:\Users\maxku\source\repos\Database conventer\Database conventer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\maxku\source\repos\Database conventer\Database conventer\bin\Debug\EntityFramework.SqlServerCompact.dll
+C:\Users\maxku\source\repos\Database conventer\Database conventer\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\maxku\source\repos\Database conventer\Database conventer\bin\Debug\Xtensive.Orm.dll
+C:\Users\maxku\source\repos\Database conventer\Database conventer\bin\Debug\Xtensive.Orm.SqlServerCe.dll
+C:\Users\maxku\source\repos\Database conventer\Database conventer\bin\Debug\EntityFramework.xml
+C:\Users\maxku\source\repos\Database conventer\Database conventer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\maxku\source\repos\Database conventer\Database conventer\bin\Debug\EntityFramework.SqlServerCompact.xml
+C:\Users\maxku\source\repos\Database conventer\Database conventer\bin\Debug\Xtensive.Orm.xml
+C:\Users\maxku\source\repos\Database conventer\Database conventer\bin\Debug\Xtensive.Orm.SqlServerCe.xml
+C:\Users\maxku\source\repos\Database conventer\Database conventer\obj\Debug\Database conventer_Content.g.cs
+C:\Users\maxku\source\repos\Database conventer\Database conventer\obj\Debug\Database conventer.csproj.CopyComplete

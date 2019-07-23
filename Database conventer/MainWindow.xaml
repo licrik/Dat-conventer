@@ -1,0 +1,21 @@
+﻿<Window x:Class="Database_conventer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Database_conventer"
+        mc:Ignorable="d"
+        Title="Database Conventer" Height="185.917" Width="334.958">
+    <Grid>
+        <Button x:Name="Source_button" Content="Source database" HorizontalAlignment="Left" Margin="10,6,0,0" VerticalAlignment="Top" Width="150" Height="30" Click="Source_Button_Click"/>
+        <Button x:Name="destination_button" Content="Destination database" HorizontalAlignment="Left" Margin="165,6,0,0" VerticalAlignment="Top" Width="149" Height="30" Click="Destination_Button_Click"/>
+        <Button x:Name="exit_button" Content="Exit" HorizontalAlignment="Left" Margin="270,120,0,0" VerticalAlignment="Top" Width="44" Height="20" Click="Exit_Button_Click"/>
+        <Label Content="Source file:" HorizontalAlignment="Left" Margin="10,36,0,0" VerticalAlignment="Top" Width="75" FontSize="10"/>
+        <Button x:Name="logs_button" Content="Logs" HorizontalAlignment="Left" Margin="10,120,0,0" VerticalAlignment="Top" Width="112" Click="Logs_Button_Click"/>
+        <Button x:Name="transform_button" Content="Transform" HorizontalAlignment="Left" Margin="10,93,0,0" VerticalAlignment="Top" Width="304" Click="Transform_button_Click"/>
+        <Label Content="Destination file:" HorizontalAlignment="Left" Margin="10,59,0,0" VerticalAlignment="Top" Width="84" FontSize="10"/>
+        <Label x:Name="source_label" Content="" HorizontalAlignment="Left" Margin="68,36,0,0" VerticalAlignment="Top" FontSize="10" Width="244"/>
+        <Label x:Name="destination_label" Content="" HorizontalAlignment="Left" Margin="85,59,0,0" VerticalAlignment="Top" Width="227" FontSize="10"/>
+
+    </Grid>
+</Window>

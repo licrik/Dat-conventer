@@ -1,0 +1,30 @@
+C:\Users\maxku\source\repos\Database conventer\Database conventer Unit tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\maxku\source\repos\Database conventer\Database conventer Unit tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\maxku\source\repos\Database conventer\Database conventer Unit tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\maxku\source\repos\Database conventer\Database conventer Unit tests\bin\Debug\ru\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+C:\Users\maxku\source\repos\Database conventer\Database conventer Unit tests\bin\Debug\ru\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+C:\Users\maxku\source\repos\Database conventer\Database conventer Unit tests\bin\Debug\ru\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\Users\maxku\source\repos\Database conventer\Database conventer Unit tests\bin\Debug\UserDbStorage.sdf
+C:\Users\maxku\source\repos\Database conventer\Database conventer Unit tests\bin\Debug\Database conventer Unit tests.dll.config
+C:\Users\maxku\source\repos\Database conventer\Database conventer Unit tests\bin\Debug\Database conventer Unit tests.dll
+C:\Users\maxku\source\repos\Database conventer\Database conventer Unit tests\bin\Debug\Database conventer Unit tests.pdb
+C:\Users\maxku\source\repos\Database conventer\Database conventer Unit tests\bin\Debug\Database conventer.exe
+C:\Users\maxku\source\repos\Database conventer\Database conventer Unit tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\maxku\source\repos\Database conventer\Database conventer Unit tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\maxku\source\repos\Database conventer\Database conventer Unit tests\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\maxku\source\repos\Database conventer\Database conventer Unit tests\bin\Debug\Database conventer.pdb
+C:\Users\maxku\source\repos\Database conventer\Database conventer Unit tests\bin\Debug\Database conventer.exe.config
+C:\Users\maxku\source\repos\Database conventer\Database conventer Unit tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\maxku\source\repos\Database conventer\Database conventer Unit tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\maxku\source\repos\Database conventer\Database conventer Unit tests\obj\Debug\Database conventer Unit tests.csprojAssemblyReference.cache
+C:\Users\maxku\source\repos\Database conventer\Database conventer Unit tests\obj\Debug\Database conventer Unit tests.csproj.CoreCompileInputs.cache
+C:\Users\maxku\source\repos\Database conventer\Database conventer Unit tests\obj\Debug\Database conventer Unit tests.csproj.CopyComplete
+C:\Users\maxku\source\repos\Database conventer\Database conventer Unit tests\obj\Debug\Database conventer Unit tests.dll
+C:\Users\maxku\source\repos\Database conventer\Database conventer Unit tests\obj\Debug\Database conventer Unit tests.pdb
+C:\Users\maxku\source\repos\Database conventer\Database conventer Unit tests\bin\Debug\AutoFixture.dll
+C:\Users\maxku\source\repos\Database conventer\Database conventer Unit tests\bin\Debug\Fare.dll
+C:\Users\maxku\source\repos\Database conventer\Database conventer Unit tests\bin\Debug\Newtonsoft.Json.dll
+C:\Users\maxku\source\repos\Database conventer\Database conventer Unit tests\bin\Debug\AutoFixture.pdb
+C:\Users\maxku\source\repos\Database conventer\Database conventer Unit tests\bin\Debug\AutoFixture.xml
+C:\Users\maxku\source\repos\Database conventer\Database conventer Unit tests\bin\Debug\Fare.xml
+C:\Users\maxku\source\repos\Database conventer\Database conventer Unit tests\bin\Debug\Newtonsoft.Json.xml
