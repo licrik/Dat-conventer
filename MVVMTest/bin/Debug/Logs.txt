@@ -1,0 +1,191 @@
+30.07.2019 15:24:39 | Start session.
+
+30.07.2019 15:25:48 | Start read DAT file
+
+30.07.2019 15:26:33 | Start session.
+
+30.07.2019 15:26:45 | Start read DAT file
+
+30.07.2019 15:26:45 | Start work with SDF file.
+
+30.07.2019 15:26:45 | Start read DAT file
+
+30.07.2019 15:26:45 | Start work with SDF file.
+
+30.07.2019 15:26:45 | Error when try connect to SDF file. Error: Формат строки инициализации не соответствует спецификации, начиная с индекса 0.
+
+30.07.2019 15:26:45 | Error when try write data in SDF file. Error: Ссылка на объект не указывает на экземпляр объекта.
+
+30.07.2019 15:26:45 | Error when try connect to SDF file. Error: Формат строки инициализации не соответствует спецификации, начиная с индекса 0.
+
+30.07.2019 15:26:45 | Error when try write data in SDF file. Error: Ссылка на объект не указывает на экземпляр объекта.
+
+30.07.2019 15:26:45 | Error when try write data in SDF file. Error: Ссылка на объект не указывает на экземпляр объекта.
+
+30.07.2019 15:26:45 | Error when try write data in SDF file. Error: Ссылка на объект не указывает на экземпляр объекта.
+
+30.07.2019 15:26:45 | Error when try write data in SDF file. Error: Ссылка на объект не указывает на экземпляр объекта.
+
+30.07.2019 15:26:45 | Error when try write data in SDF file. Error: Ссылка на объект не указывает на экземпляр объекта.
+
+30.07.2019 15:26:45 | Error when try write data in SDF file. Error: Ссылка на объект не указывает на экземпляр объекта.
+
+30.07.2019 15:26:45 | Error when try write data in SDF file. Error: Ссылка на объект не указывает на экземпляр объекта.
+
+30.07.2019 15:26:45 | Error when try write data in SDF file. Error: Ссылка на объект не указывает на экземпляр объекта.
+
+30.07.2019 15:26:45 | Error when try write data in SDF file. Error: Ссылка на объект не указывает на экземпляр объекта.
+
+30.07.2019 15:26:45 | Error when try write data in SDF file. Error: Ссылка на объект не указывает на экземпляр объекта.
+
+30.07.2019 15:26:45 | Error when try write data in SDF file. Error: Ссылка на объект не указывает на экземпляр объекта.
+
+30.07.2019 15:27:20 | Start read DAT file
+
+30.07.2019 15:29:13 | Start session.
+
+30.07.2019 15:29:20 | Start read DAT file
+
+30.07.2019 15:29:20 | Start work with SDF file.
+
+30.07.2019 15:29:20 | Error when try connect to SDF file. Error: Формат строки инициализации не соответствует спецификации, начиная с индекса 0.
+
+30.07.2019 15:29:50 | Start session.
+
+30.07.2019 15:29:58 | Start read DAT file
+
+30.07.2019 15:29:58 | Start work with SDF file.
+
+30.07.2019 15:30:33 | Error when try connect to SDF file. Error: Формат строки инициализации не соответствует спецификации, начиная с индекса 0.
+
+30.07.2019 15:31:16 | Start session.
+
+30.07.2019 15:31:34 | Start read DAT file
+
+30.07.2019 15:31:34 | Start work with SDF file.
+
+30.07.2019 15:34:02 | Start session.
+30.07.2019 15:34:09 | Start read DAT file
+30.07.2019 15:34:09 | Start work with SDF file.
+30.07.2019 15:35:32 | Error when try connect to SDF file. Error: Формат строки инициализации не соответствует спецификации, начиная с индекса 0.
+30.07.2019 15:35:41 | Start session.
+30.07.2019 15:35:51 | Start read DAT file
+30.07.2019 15:35:51 | Start work with SDF file.
+30.07.2019 15:37:19 | Start session.
+30.07.2019 15:37:31 | Start read DAT file
+30.07.2019 15:37:31 | Start work with SDF file.
+30.07.2019 15:37:36 | End operation.
+30.07.2019 15:37:49 | Start read DAT file
+30.07.2019 15:38:15 | Start session.
+30.07.2019 15:38:27 | Start read DAT file
+30.07.2019 15:38:27 | Start work with SDF file.
+30.07.2019 15:38:27 | End operation.
+30.07.2019 15:38:59 | Start read DAT file
+30.07.2019 15:39:20 | Start work with SDF file.
+30.07.2019 15:39:20 | End operation.
+30.07.2019 15:39:33 | Start read DAT file
+30.07.2019 15:41:15 | Start session.
+30.07.2019 15:41:28 | Start read DAT file
+30.07.2019 15:45:12 | Start session.
+30.07.2019 15:45:25 | Start read DAT file
+30.07.2019 15:45:25 | Start work with SDF file.
+30.07.2019 15:45:25 | Start read DAT file
+30.07.2019 15:45:25 | Start work with SDF file.
+30.07.2019 15:45:25 | Start read DAT file
+30.07.2019 15:45:25 | Start work with SDF file.
+30.07.2019 15:45:25 | End operation.
+30.07.2019 15:45:25 | End operation.
+30.07.2019 15:45:25 | End operation.
+30.07.2019 15:45:37 | Start read DAT file
+30.07.2019 15:45:37 | Start work with SDF file.
+30.07.2019 15:45:37 | End operation.
+30.07.2019 15:45:50 | Start read DAT file
+30.07.2019 15:45:50 | Start work with SDF file.
+30.07.2019 15:45:50 | End operation.
+30.07.2019 15:45:51 | Start read DAT file
+30.07.2019 15:45:51 | Start work with SDF file.
+30.07.2019 15:45:51 | End operation.
+30.07.2019 15:45:52 | Start read DAT file
+30.07.2019 15:45:52 | Start work with SDF file.
+30.07.2019 15:45:52 | End operation.
+30.07.2019 15:45:52 | Start read DAT file
+30.07.2019 15:45:52 | Start work with SDF file.
+30.07.2019 15:45:52 | End operation.
+30.07.2019 15:45:55 | Start read DAT file
+30.07.2019 15:45:55 | Start work with SDF file.
+30.07.2019 15:45:55 | End operation.
+30.07.2019 15:46:11 | Start read DAT file
+30.07.2019 15:46:11 | Start work with SDF file.
+30.07.2019 15:46:11 | End operation.
+30.07.2019 15:47:58 | Start session.
+30.07.2019 15:48:10 | Start read DAT file
+30.07.2019 15:48:35 | Start session.
+30.07.2019 15:48:44 | Start read DAT file
+30.07.2019 15:48:44 | Start work with SDF file.
+30.07.2019 15:48:44 | End operation.
+30.07.2019 15:48:52 | Start read DAT file
+30.07.2019 15:48:52 | Start work with SDF file.
+30.07.2019 15:48:52 | End operation.
+30.07.2019 15:49:19 | Start read DAT file
+30.07.2019 15:49:19 | Start work with SDF file.
+30.07.2019 15:49:19 | End operation.
+30.07.2019 16:19:15 | Start session.
+30.07.2019 16:19:31 | Start session.
+30.07.2019 16:21:08 | Start session.
+30.07.2019 16:22:34 | Start session.
+30.07.2019 16:23:34 | Start session.
+30.07.2019 16:23:43 | Start read DAT file
+30.07.2019 16:23:43 | Start work with SDF file.
+30.07.2019 16:23:43 | End operation.
+30.07.2019 16:23:49 | Start read DAT file
+30.07.2019 16:23:49 | Start work with SDF file.
+30.07.2019 16:23:49 | End operation.
+30.07.2019 16:47:49 | Start session.
+30.07.2019 16:48:04 | Start session.
+30.07.2019 16:48:45 | Start session.
+30.07.2019 16:48:54 | Start read DAT file
+30.07.2019 16:48:54 | Start work with SDF file.
+30.07.2019 16:48:54 | End operation.
+30.07.2019 16:49:32 | Start session.
+30.07.2019 16:52:11 | Start session.
+30.07.2019 16:53:52 | Start session.
+30.07.2019 16:54:06 | Start session.
+31.07.2019 11:04:27 | Start session.
+31.07.2019 11:05:12 | Start session.
+31.07.2019 11:07:41 | Start session.
+31.07.2019 11:08:03 | Start read DAT file
+31.07.2019 11:08:03 | Start work with SDF file.
+31.07.2019 11:08:03 | End operation.
+31.07.2019 11:08:21 | Start read DAT file
+31.07.2019 11:08:21 | Start work with SDF file.
+31.07.2019 11:08:21 | End operation.
+31.07.2019 11:08:25 | Start read DAT file
+31.07.2019 11:08:25 | Start work with SDF file.
+31.07.2019 11:08:25 | End operation.
+31.07.2019 11:08:34 | Start read DAT file
+31.07.2019 11:08:34 | Start work with SDF file.
+31.07.2019 11:08:34 | End operation.
+31.07.2019 11:10:02 | Start session.
+31.07.2019 11:10:10 | Start read DAT file
+31.07.2019 11:10:10 | Start work with SDF file.
+31.07.2019 11:10:11 | End operation.
+31.07.2019 11:10:14 | Start read DAT file
+31.07.2019 11:10:14 | Start work with SDF file.
+31.07.2019 11:10:14 | End operation.
+31.07.2019 11:10:21 | Start read DAT file
+31.07.2019 11:10:21 | Start work with SDF file.
+31.07.2019 11:10:21 | End operation.
+31.07.2019 11:10:34 | Start session.
+31.07.2019 11:10:41 | Start read DAT file
+31.07.2019 11:10:41 | Start work with SDF file.
+31.07.2019 11:10:41 | End operation.
+31.07.2019 11:11:55 | Start session.
+31.07.2019 11:12:01 | Start read DAT file
+31.07.2019 11:12:01 | Start work with SDF file.
+31.07.2019 11:12:02 | End operation.
+31.07.2019 11:12:05 | Start read DAT file
+31.07.2019 11:12:05 | Start work with SDF file.
+31.07.2019 11:12:05 | End operation.
+31.07.2019 11:12:08 | Start read DAT file
+31.07.2019 11:12:08 | Start work with SDF file.
+31.07.2019 11:12:08 | End operation.

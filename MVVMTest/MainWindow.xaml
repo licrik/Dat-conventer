@@ -1,0 +1,67 @@
+﻿<Window x:Class="MVVMTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MVVMTest"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button Content="Open" HorizontalAlignment="Left" Margin="13,26,0,0" VerticalAlignment="Top" Width="75"
+                Command="{Binding OpenCommand}"
+                />
+        <Label x:Name="OpenLable" Content="{Binding Path_file_open}" HorizontalAlignment="Left" Margin="116,26,0,0" VerticalAlignment="Top" Height="47" Width="642"/>
+        <Button Content="Save" HorizontalAlignment="Left" Margin="13,177,0,0" VerticalAlignment="Top" Width="75"
+            Command="{Binding SaveCommand}"
+                />
+        <Label x:Name="SaveLable">
+            <Label.Style>
+                <Style TargetType="Label">
+                    <Setter Property="HorizontalAlignment" Value="Left"/>
+                    <Setter Property="Margin" Value="116,177,0,0"/>
+                    <Setter Property="VerticalAlignment" Value="Top"/>
+                    <Setter Property="Height" Value="47"/>
+                    <Setter Property="Width" Value="642"/>
+                    <Setter Property="Content" Value="{Binding Path_file_save}"/>
+                </Style>
+            </Label.Style>
+        </Label>
+        <Button x:Name="StartButton">
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="HorizontalAlignment" Value="Left"/>
+                    <Setter Property="Margin" Value="10,229,0,0"/>
+                    <Setter Property="VerticalAlignment" Value="Top"/>
+                    <Setter Property="Width" Value="770"/>
+                    <Setter Property="Content" Value="Start operation"/>
+                    <Setter Property="Command" Value="{Binding StartWork}"/>
+                    <Setter Property="IsEnabled" Value="{Binding Enabled}"/>
+                </Style>
+            </Button.Style>
+        </Button>
+        <ProgressBar>
+            <ProgressBar.Style>
+                <Style TargetType="ProgressBar">
+                    <Setter Property="VerticalAlignment" Value="Top"/>
+                    <Setter Property="Margin" Value="10,273,14,0"/>
+                    <Setter Property="Height" Value="20"/>
+                    <Setter Property="Width" Value="770"/>
+                    <Setter Property="Value" Value="{Binding ProgressBar_value}"/>
+                    <Setter Property="Maximum" Value="{Binding ProgressBar_maxValue}"/>
+                </Style>
+            </ProgressBar.Style>
+        </ProgressBar>
+        <Button x:Name="ButtonLogs">
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="HorizontalAlignment" Value="Left"/>
+                    <Setter Property="Margin" Value="10,391,0,0"/>
+                    <Setter Property="VerticalAlignment" Value="Top"/>
+                    <Setter Property="Width" Value="75"/>
+                    <Setter Property="Command" Value="{Binding ShowLogs}"/>
+                    <Setter Property="Content" Value="Show logs"/>
+                </Style>
+            </Button.Style>
+        </Button>
+    </Grid>
+</Window>
