@@ -1,13 +1,8 @@
 ﻿using MVVMTest.Class;
 using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.ComponentModel;
-using System.Linq;
 using System.Runtime.CompilerServices;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Input;
 
 namespace MVVMTest
@@ -18,7 +13,7 @@ namespace MVVMTest
         public Logs.LogsViewModel logsViewModel;
 
         #region Button Activate
-        private bool enabled;
+        private bool enabled = false;
 
         public bool Enabled
         {
@@ -29,6 +24,16 @@ namespace MVVMTest
                 OnPropertyChanged("Enabled");
             }
         }
+
+        private bool[] stringNotNull = new bool[2];
+
+        public void Up(bool value, int position)
+        {
+            stringNotNull[position] = value;
+
+            Enabled = (stringNotNull[0] == true && stringNotNull[1] == true);
+        }
+
         #endregion
 
         #region ProgressBar
@@ -90,7 +95,7 @@ namespace MVVMTest
             logsViewModel = new Logs.LogsViewModel();
         }
 
-        #region OpenFileDialog
+        #region SDF File
         private RelayCommand saveCommand;
         public RelayCommand SaveCommand
         {
@@ -113,7 +118,9 @@ namespace MVVMTest
                   }));
             }
         }
+        #endregion
 
+        #region DAT File
         // команда открытия файла
         private RelayCommand openCommand;
         public RelayCommand OpenCommand
@@ -149,6 +156,10 @@ namespace MVVMTest
             set { startWork = value; }
         }
 
+        
+        /// <summary>
+        /// Start of data conversion operation
+        /// </summary>
         public void DoWork()
         {
             Enabled = false;

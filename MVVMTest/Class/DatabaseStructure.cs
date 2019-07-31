@@ -9,41 +9,41 @@ namespace MVVMTest.Class
     class DatabaseStructure
     {
         public int legth_class { get; set; }
-        public Boolean filled_record { get; set; } // 1 byte
+        public Boolean filled_record { get; set; }
 
-        public UInt16 fields_flags { get; set; }  //2 byte
+        public UInt16 fields_flags { get; set; }  
 
-        public UInt32 groupID { get; set; }    // 4 byte
+        public UInt32 groupID { get; set; }    
 
-        public UInt32 userID { get; set; }      // 4 byte
+        public UInt32 userID { get; set; }      
 
-        public Byte NameLen { get; set; }     // 1 byte
+        public Byte nameLen { get; set; }     
 
-        public string name { get; set; }        // 100 byte
+        public string name { get; set; }        
 
-        public Boolean Hidden { get; set; }     // 100 byte
+        public Boolean hidden { get; set; }     
 
-        public Byte RSetLen { get; set; }     // 1 byte
+        public Byte RSetLen { get; set; }     
 
-        public string RightSet { get; set; }
+        public string rightSet { get; set; }
 
-        public Byte HashLen { get; set; }
+        public Byte hashLen { get; set; }
 
-        public string HashCode { get; set; }       // 1 byte 
+        public string hashCode { get; set; }       // 1 byte 
 
-        public Byte CompanyLen { get; set; }      // 100 byte
+        public Byte companyLen { get; set; }      // 100 byte
 
-        public string Company { get; set; }     // 1 byte
+        public string company { get; set; }     // 1 byte
 
-        public Byte AirportLen { get; set; }  //
+        public Byte airportLen { get; set; }  //
 
-        public string Airport { get; set; }
+        public string airport { get; set; }
 
-        public Byte TerminalLen { get; set; }
+        public Byte terminalLen { get; set; }
 
-        public string Terminal { get; set; }
+        public string terminal { get; set; }
 
-        public Byte CheckSum { get; set; }
+        public Byte checkSum { get; set; }
 
         public DatabaseStructure() { }
 
@@ -62,50 +62,71 @@ namespace MVVMTest.Class
             userID = BitConverter.ToUInt32(bytes_array, legth_class);
             legth_class += sizeof(UInt32);
 
-            NameLen = bytes_array[legth_class];
+            nameLen = bytes_array[legth_class];
             legth_class++;
 
-            name = Convert_to_string(bytes_array, 100);
+            name = Convert_to_string(bytes_array, 100, nameLen);
 
-            Hidden = BitConverter.ToBoolean(bytes_array, legth_class);
+            hidden = BitConverter.ToBoolean(bytes_array, legth_class);
             legth_class += sizeof(Boolean);
 
             RSetLen = bytes_array[legth_class];
             legth_class++;
 
-            RightSet = Convert_to_string(bytes_array, 100);
+            rightSet = Convert_to_hex(bytes_array, 100, RSetLen);
 
-            HashLen = bytes_array[legth_class];
+            hashLen = bytes_array[legth_class];
             legth_class++;
 
-            HashCode = Convert_to_string(bytes_array, 100);
+            hashCode = Convert_to_hex(bytes_array, 100, hashLen);
 
-            CompanyLen = bytes_array[legth_class];
+            companyLen = bytes_array[legth_class];
             legth_class++;
 
-            Company = Convert_to_string(bytes_array, 50);
+            company = Convert_to_string(bytes_array, 50, companyLen);
 
-            AirportLen = bytes_array[legth_class];
+            airportLen = bytes_array[legth_class];
             legth_class++;
 
-            Airport = Convert_to_string(bytes_array, 50);
+            airport = Convert_to_string(bytes_array, 50, airportLen);
 
-            TerminalLen = bytes_array[legth_class];
+            terminalLen = bytes_array[legth_class];
             legth_class++;
 
-            Terminal = Convert_to_string(bytes_array, 25);
+            terminal = Convert_to_string(bytes_array, 25, terminalLen);
 
-            CheckSum = bytes_array[legth_class];
+            checkSum = bytes_array[legth_class];
             legth_class++;
         }
 
-        public string Convert_to_string(byte[] array, int length)
+        public string Convert_to_hex(byte[] array, int length, int trueLength)
         {
+            if (trueLength == 0) {
+                this.legth_class += length;
+
+                return "";
+            }
+
             byte[] tmp = new byte[length];
             Buffer.BlockCopy(array, legth_class, tmp, 0, tmp.Length);
             this.legth_class += length;
 
-            return Encoding.ASCII.GetString(tmp).Replace("\0", string.Empty);
+            return BitConverter.ToString(tmp).Replace("-", string.Empty).Substring(0, trueLength * 2);
+        }
+
+        public string Convert_to_string(byte[] array, int length, int trueLen)
+        {
+            if (trueLen == 0) {
+                this.legth_class += length;
+
+                return "";
+            }
+
+            byte[] tmp = new byte[length];
+            Buffer.BlockCopy(array, legth_class, tmp, 0, tmp.Length);
+            this.legth_class += length;
+
+            return Encoding.ASCII.GetString(tmp).Replace("\0", string.Empty).Substring(0, trueLen);
         }
 
         public int Get_GroupId()

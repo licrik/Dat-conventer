@@ -5,63 +5,98 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MVVMTest"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="242" Width="805">
+    <Window.Resources>
+        <Style x:Key="Base" TargetType="Control">
+            <Setter Property="VerticalAlignment" Value="Top"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+        </Style>
+        
+        <Style x:Key="openFileButton" TargetType="Button" BasedOn="{StaticResource Base}">
+            <Setter Property="Margin" Value="15, 25, 0, 0"/>
+            <Setter Property="Width" Value="100"/>
+            <Setter Property="Height" Value="25"/>
+        </Style>
+
+        <Style x:Key="LablePathFile" TargetType="Label" BasedOn="{StaticResource Base}">
+            <Setter Property="Margin" Value="120, 25, 0, 0"/>
+        </Style>
+
+        <Style x:Key="OperationButton" TargetType="Button" BasedOn="{StaticResource Base}">
+            <Setter Property="Margin" Value="15, 120, 0, 0"/>
+            <Setter Property="Width" Value="765"/>
+            <Setter Property="Height" Value="35"/>
+            <Setter Property="Visibility" Value="Hidden"/>
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding ElementName=Elem, Path=IsChecked}" Value="True">
+                    <Setter Property="Visibility" Value="Visible"/>
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
+
+        <Style x:Key="OperationBar" TargetType="ProgressBar" BasedOn="{StaticResource Base}">
+            <Setter Property="Margin" Value="15, 120, 0, 0"/>
+            <Setter Property="Width" Value="765"/>
+            <Setter Property="Height" Value="35"/>
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding ElementName=Elem, Path=IsChecked}" Value="True">
+                    <Setter Property="Visibility" Value="Hidden"/>
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
+
+        <Style x:Key="LogsButton" TargetType="Button" BasedOn="{StaticResource Base}">
+            <Setter Property="Margin" Value="15, 170, 0, 0"/>
+            <Setter Property="Width" Value="100"/>
+            <Setter Property="Height" Value="25"/>
+        </Style>
+    </Window.Resources>
     <Grid>
-        <Button Content="Open" HorizontalAlignment="Left" Margin="13,26,0,0" VerticalAlignment="Top" Width="75"
+        <StackPanel>
+            <Button Content="Open" 
+                Style="{StaticResource openFileButton}"
                 Command="{Binding OpenCommand}"
                 />
-        <Label x:Name="OpenLable" Content="{Binding Path_file_open}" HorizontalAlignment="Left" Margin="116,26,0,0" VerticalAlignment="Top" Height="47" Width="642"/>
-        <Button Content="Save" HorizontalAlignment="Left" Margin="13,177,0,0" VerticalAlignment="Top" Width="75"
-            Command="{Binding SaveCommand}"
+            <Button Content="Save" 
+                Style="{StaticResource openFileButton}"
+                Command="{Binding SaveCommand}"
                 />
-        <Label x:Name="SaveLable">
-            <Label.Style>
-                <Style TargetType="Label">
-                    <Setter Property="HorizontalAlignment" Value="Left"/>
-                    <Setter Property="Margin" Value="116,177,0,0"/>
-                    <Setter Property="VerticalAlignment" Value="Top"/>
-                    <Setter Property="Height" Value="47"/>
-                    <Setter Property="Width" Value="642"/>
-                    <Setter Property="Content" Value="{Binding Path_file_save}"/>
-                </Style>
-            </Label.Style>
-        </Label>
-        <Button x:Name="StartButton">
-            <Button.Style>
-                <Style TargetType="Button">
-                    <Setter Property="HorizontalAlignment" Value="Left"/>
-                    <Setter Property="Margin" Value="10,229,0,0"/>
-                    <Setter Property="VerticalAlignment" Value="Top"/>
-                    <Setter Property="Width" Value="770"/>
-                    <Setter Property="Content" Value="Start operation"/>
-                    <Setter Property="Command" Value="{Binding StartWork}"/>
-                    <Setter Property="IsEnabled" Value="{Binding Enabled}"/>
-                </Style>
-            </Button.Style>
-        </Button>
-        <ProgressBar>
-            <ProgressBar.Style>
-                <Style TargetType="ProgressBar">
-                    <Setter Property="VerticalAlignment" Value="Top"/>
-                    <Setter Property="Margin" Value="10,273,14,0"/>
-                    <Setter Property="Height" Value="20"/>
-                    <Setter Property="Width" Value="770"/>
-                    <Setter Property="Value" Value="{Binding ProgressBar_value}"/>
-                    <Setter Property="Maximum" Value="{Binding ProgressBar_maxValue}"/>
-                </Style>
-            </ProgressBar.Style>
+        </StackPanel>
+
+        <StackPanel >
+        <Label x:Name="OpenLable" 
+                    Content="{Binding Path_file_open}" 
+                    Style="{StaticResource LablePathFile}" 
+                    />
+
+        <Label x:Name="SaveLable" 
+                   Content="{Binding Path_file_save}"
+                   Style="{StaticResource LablePathFile}"
+                   />
+        </StackPanel>
+        <Button x:Name="StartButton" 
+                Style="{StaticResource OperationButton}"
+                Command="{Binding StartWork}"
+                IsEnabled="{Binding Enabled}"
+                Content="Start convert"
+                />
+
+        <ProgressBar 
+            Style="{StaticResource OperationBar}"
+            Value="{Binding ProgressBar_value}"
+            Maximum="{Binding ProgressBar_maxValue}">
+           
         </ProgressBar>
-        <Button x:Name="ButtonLogs">
-            <Button.Style>
-                <Style TargetType="Button">
-                    <Setter Property="HorizontalAlignment" Value="Left"/>
-                    <Setter Property="Margin" Value="10,391,0,0"/>
-                    <Setter Property="VerticalAlignment" Value="Top"/>
-                    <Setter Property="Width" Value="75"/>
-                    <Setter Property="Command" Value="{Binding ShowLogs}"/>
-                    <Setter Property="Content" Value="Show logs"/>
-                </Style>
-            </Button.Style>
-        </Button>
+
+        <Button x:Name="ButtonLogs" 
+                Command="{Binding ShowLogs}"
+                Content="Show logs"
+                Style="{StaticResource LogsButton}"
+                />
+      
+        <CheckBox x:Name="Elem"
+                   IsChecked="{Binding Enabled}"
+                   Visibility="Hidden" 
+                  />
     </Grid>
 </Window>

@@ -14,22 +14,39 @@ namespace MVVMTest.Class
         private int classLength = 444;
         private ApplicationViewModel model;
 
-        int IDFromHex(string HexID)
-        {
-            return int.Parse(HexID, System.Globalization.NumberStyles.HexNumber);
+        //int IDFromHex(string HexID)
+        //{
+        //    return int.Parse(HexID, System.Globalization.NumberStyles.HexNumber);
+        //}
+        /// <summary>
+        /// The constructor initializes the components and starts the work
+        /// </summary>
+        /// <param name="datFilePath">Dat file path</param>
+        /// <param name="sdfFilePath">Sdf file path</param>
+        /// <param name="model">Viev model is needed to change state </param>
+        public FileReader(string datFilePath, string sdfFilePath, ApplicationViewModel model) {
+            this.model = model;
+
+            ReadDataFromFile(datFilePath);
+
+            ConvertToDb(sdfFilePath);
         }
 
-        public FileReader(string dat_file, string sdf_file, ApplicationViewModel model) {
-            this.model = model;
+        /// <summary>
+        /// Read data from file and convert to class
+        /// </summary>
+        /// <param name="path">Dat file path</param>
+        private void ReadDataFromFile(string path)
+        {
             byte[] array_test = new byte[classLength];
 
-            using (BinaryReader reader = new BinaryReader(File.Open(dat_file, FileMode.Open)))
+            using (BinaryReader reader = new BinaryReader(File.Open(path, FileMode.Open)))
             {
                 model.logsViewModel.AddTextToLogs("Start read DAT file");
                 //Skip first bytes
                 reader.BaseStream.Seek(314, SeekOrigin.Begin);
                 PutMaxLength(reader.BaseStream.Length);
-              
+
                 int current_length = database_list.Count * classLength;
 
                 while (reader.PeekChar() > -1)
@@ -40,12 +57,15 @@ namespace MVVMTest.Class
                     IncrementProgressBar();
                 }
             }
-            this.ConvertToDb(sdf_file);
         }
 
-        private void PutMaxLength(long fileCount)
+        /// <summary>
+        /// Сalculation and setting the maximum Progress bar value
+        /// </summary>
+        /// <param name="dataCount">Number of records to process</param>
+        private void PutMaxLength(long dataCount)
         {
-            model.ProgressBar_maxValue = (Convert.ToInt32(fileCount) / classLength) * 2;
+            model.ProgressBar_maxValue = (Convert.ToInt32(dataCount) / classLength) * 2;
         }
 
         private void IncrementProgressBar()
@@ -53,16 +73,22 @@ namespace MVVMTest.Class
             model.ProgressBar_value++;
         }
 
+        /// <summary>
+        /// Write data from class to file
+        /// </summary>
+        /// <param name="sdf_file">File path</param>
         private void ConvertToDb(string sdf_file)
         {
+            FileWriter fileWriter = null;
+
             try
             {
                 model.logsViewModel.AddTextToLogs("Start wtite in SDF file.");
 
-                FileWriter fileWriter = new FileWriter(sdf_file, model);
+                fileWriter = new FileWriter(sdf_file, model);
                 for (int i = 0; i < this.database_list.Count; i++)
                 {
-                    fileWriter.AddValueInDataBase(name: this.database_list[i].name, password: this.database_list[i].HashCode, group_id: this.database_list[i].Get_GroupId());
+                    fileWriter.AddValueInDataBase(name: this.database_list[i].name, password: this.database_list[i].hashCode, group_id: this.database_list[i].Get_GroupId());
 
                     IncrementProgressBar();
                 }
@@ -73,16 +99,13 @@ namespace MVVMTest.Class
             }
             finally
             {
+                fileWriter.ConnectionClose();
                 model.Enabled = true;
                 model.logsViewModel.AddTextToLogs("End operation.");
 
                 MessageBox.Show("Operation end.");
                 model.ProgressBar_value = 0;
             }
-        }
-
-        private void writeLog(string text)
-        {
         }
     }
 }
