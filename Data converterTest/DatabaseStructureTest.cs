@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using DataConventer.Class;
 using System.Text;
 using Newtonsoft.Json;
+using DataConventer.Class;
 
 namespace Data_converterTest
 {
@@ -12,6 +12,7 @@ namespace Data_converterTest
     {
         private struct FileEmulator
         {
+            
             public DatabaseStructure class_data;
             public List<byte> bytes_array;
         }

@@ -59,7 +59,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MVVMTest\DataConventer.csproj">
+    <ProjectReference Include="..\DataConventer\DataConventer.csproj">
       <Project>{eea1e5ee-18ee-4b2b-8b68-5f67746339a2}</Project>
       <Name>DataConventer</Name>
     </ProjectReference>
