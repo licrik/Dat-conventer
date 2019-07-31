@@ -1,11 +1,11 @@
-﻿using MVVMTest.Class;
+﻿using DataConventer.Class;
 using System;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Threading;
 using System.Windows.Input;
 
-namespace MVVMTest
+namespace DataConventer
 {
     class ApplicationViewModel : INotifyPropertyChanged
     {

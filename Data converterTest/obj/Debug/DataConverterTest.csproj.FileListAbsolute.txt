@@ -1,0 +1,23 @@
+C:\Users\Admin\source\repos\licrik\Dat-conventer\Data converterTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Admin\source\repos\licrik\Dat-conventer\Data converterTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Admin\source\repos\licrik\Dat-conventer\Data converterTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Admin\source\repos\licrik\Dat-conventer\Data converterTest\bin\Debug\ru\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+C:\Users\Admin\source\repos\licrik\Dat-conventer\Data converterTest\bin\Debug\ru\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+C:\Users\Admin\source\repos\licrik\Dat-conventer\Data converterTest\bin\Debug\ru\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\Users\Admin\source\repos\licrik\Dat-conventer\Data converterTest\bin\Debug\Data converterTest.dll
+C:\Users\Admin\source\repos\licrik\Dat-conventer\Data converterTest\bin\Debug\Data converterTest.pdb
+C:\Users\Admin\source\repos\licrik\Dat-conventer\Data converterTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\Admin\source\repos\licrik\Dat-conventer\Data converterTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\Admin\source\repos\licrik\Dat-conventer\Data converterTest\bin\Debug\MVVMTest.exe
+C:\Users\Admin\source\repos\licrik\Dat-conventer\Data converterTest\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Admin\source\repos\licrik\Dat-conventer\Data converterTest\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\Admin\source\repos\licrik\Dat-conventer\Data converterTest\bin\Debug\MVVMTest.pdb
+C:\Users\Admin\source\repos\licrik\Dat-conventer\Data converterTest\bin\Debug\MVVMTest.exe.config
+C:\Users\Admin\source\repos\licrik\Dat-conventer\Data converterTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\Admin\source\repos\licrik\Dat-conventer\Data converterTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\Admin\source\repos\licrik\Dat-conventer\Data converterTest\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Admin\source\repos\licrik\Dat-conventer\Data converterTest\obj\Debug\DataConverterTest.csprojAssemblyReference.cache
+C:\Users\Admin\source\repos\licrik\Dat-conventer\Data converterTest\obj\Debug\DataConverterTest.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\licrik\Dat-conventer\Data converterTest\obj\Debug\DataConverterTest.csproj.CopyComplete
+C:\Users\Admin\source\repos\licrik\Dat-conventer\Data converterTest\obj\Debug\Data converterTest.dll
+C:\Users\Admin\source\repos\licrik\Dat-conventer\Data converterTest\obj\Debug\Data converterTest.pdb

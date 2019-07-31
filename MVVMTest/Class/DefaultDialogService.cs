@@ -1,12 +1,7 @@
 ﻿using Microsoft.Win32;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 
-namespace MVVMTest
+namespace DataConventer
 {
     class DefaultDialogService : IDialogService
     {
@@ -21,6 +16,7 @@ namespace MVVMTest
                 FilePath = openFileDialog.FileName;
                 return true;
             }
+
             return false;
         }
 
@@ -33,12 +29,8 @@ namespace MVVMTest
                 FilePath = saveFileDialog.FileName;
                 return true;
             }
-            return false;
-        }
 
-        public void ShowMessage(string message)
-        {
-            MessageBox.Show(message);
+            return false;
         }
     }
 }

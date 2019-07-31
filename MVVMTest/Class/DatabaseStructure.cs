@@ -1,12 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
-namespace MVVMTest.Class
+namespace DataConventer.Class
 {
-    class DatabaseStructure
+    public class DatabaseStructure
     {
         public int legth_class { get; set; }
         public Boolean filled_record { get; set; }

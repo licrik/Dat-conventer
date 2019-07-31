@@ -1,12 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 
-namespace MVVMTest.Class
+namespace DataConventer.Class
 {
     class FileReader
     {
@@ -14,10 +11,6 @@ namespace MVVMTest.Class
         private int classLength = 444;
         private ApplicationViewModel model;
 
-        //int IDFromHex(string HexID)
-        //{
-        //    return int.Parse(HexID, System.Globalization.NumberStyles.HexNumber);
-        //}
         /// <summary>
         /// The constructor initializes the components and starts the work
         /// </summary>
@@ -39,23 +32,29 @@ namespace MVVMTest.Class
         private void ReadDataFromFile(string path)
         {
             byte[] array_test = new byte[classLength];
-
-            using (BinaryReader reader = new BinaryReader(File.Open(path, FileMode.Open)))
+            try
             {
-                model.logsViewModel.AddTextToLogs("Start read DAT file");
-                //Skip first bytes
-                reader.BaseStream.Seek(314, SeekOrigin.Begin);
-                PutMaxLength(reader.BaseStream.Length);
-
-                int current_length = database_list.Count * classLength;
-
-                while (reader.PeekChar() > -1)
+                using (BinaryReader reader = new BinaryReader(File.Open(path, FileMode.Open)))
                 {
-                    reader.Read(array_test, current_length, classLength);
-                    database_list.Add(new DatabaseStructure(array_test));
+                    model.logsViewModel.AddTextToLogs("Start read DAT file");
+                    //Skip first bytes
+                    reader.BaseStream.Seek(314, SeekOrigin.Begin);
+                    PutMaxLength(reader.BaseStream.Length);
 
-                    IncrementProgressBar();
+                    int current_length = database_list.Count * classLength;
+
+                    while (reader.PeekChar() > -1)
+                    {
+                        reader.Read(array_test, current_length, classLength);
+                        database_list.Add(new DatabaseStructure(array_test));
+
+                        IncrementProgressBar();
+                    }
                 }
+            }
+            catch (Exception ex)
+            {
+                model.logsViewModel.AddTextToLogs("Error when read DAT file. Error: " + ex.Message);
             }
         }
 
