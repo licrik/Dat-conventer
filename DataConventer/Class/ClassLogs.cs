@@ -5,7 +5,7 @@ using System.Runtime.CompilerServices;
 
 namespace DataConventer.Logs
 {
-    public class ClassLogs : INotifyPropertyChanged
+    public class ClassLogs 
     {
         private string text;
         private string date;
@@ -17,16 +17,7 @@ namespace DataConventer.Logs
             {
                 text = value;
                 date = DateTime.Now.ToString("dd.MM.yyyy HH:mm:ss");
-
-                OnPropertyChanged("Text");
             }
-        }
-
-        public event PropertyChangedEventHandler PropertyChanged;
-        public void OnPropertyChanged([CallerMemberName]string prop = "")
-        {
-            if (PropertyChanged != null)
-                PropertyChanged(this, new PropertyChangedEventArgs(prop));
         }
 
         public ClassLogs(string value)

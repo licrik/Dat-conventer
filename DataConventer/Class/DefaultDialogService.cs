@@ -3,7 +3,7 @@ using System.Windows;
 
 namespace DataConventer
 {
-    class DefaultDialogService : IDialogService
+    public class DefaultDialogService : IDialogService
     {
         public string FilePath { get; set; }
 

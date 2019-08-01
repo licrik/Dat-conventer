@@ -1,4 +1,6 @@
-﻿using System.Collections.ObjectModel;
+﻿using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
@@ -6,7 +8,21 @@ namespace DataConventer.Logs
 {
     public class LogsViewModel : INotifyPropertyChanged
     {
-        public ObservableCollection<ClassLogs> TextList { get; set; }
+        private ObservableCollection<ClassLogs> textList;
+      
+        public ObservableCollection<ClassLogs> TextList
+        {
+            get
+            {
+                return textList;
+            }
+
+            set
+            {
+                textList = value;
+                OnPropertyChanged("TextList");
+            }
+        }
 
         public event PropertyChangedEventHandler PropertyChanged;
         public void OnPropertyChanged([CallerMemberName]string prop = "")
@@ -17,14 +33,12 @@ namespace DataConventer.Logs
 
         public void AddTextToLogs(string text)
         {
-            try
-            {
-                TextList.Add(new ClassLogs(text));
-            }
-            catch
-            {
-
-            }
+            App.Current.Dispatcher.Invoke(
+                (Action)delegate
+                {
+                    TextList.Add(new ClassLogs(text));
+                }
+                );
         }
 
         public LogsViewModel()

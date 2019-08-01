@@ -3,7 +3,7 @@ using System.Windows.Input;
 
 namespace DataConventer
 {
-    class ButtonCommand : ICommand
+    public class ButtonCommand : ICommand
     {
         private Action _action;
         public ButtonCommand(Action action)

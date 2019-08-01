@@ -1,5 +1,7 @@
 ﻿using DataConventer.Class;
+using DataConventer.Logs;
 using System;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Threading;
@@ -7,11 +9,11 @@ using System.Windows.Input;
 
 namespace DataConventer
 {
-    class ApplicationViewModel : INotifyPropertyChanged
+    public class ApplicationViewModel : INotifyPropertyChanged
     {
         IDialogService dialogService;
         public Logs.LogsViewModel logsViewModel;
-
+        
         #region Button Activate
         private bool enabled = false;
 
@@ -88,10 +90,13 @@ namespace DataConventer
 
         public ApplicationViewModel()
         {
+            //Setting button actions
             dialogService = new DefaultDialogService();
-            StartWork = new ButtonCommand(new Action(DoWork));
-            ShowLogs = new ButtonCommand(new Action(ShowLogWindow));
+            StartWork = new RelayCommand(new Action(DoWork));
+            ShowLogs = new RelayCommand(new Action(ShowLogWindow));
+            //Setting the maximum value of the ProgressBar
             ProgressBar_maxValue = 1;
+            //Create logs vieswModel when we write logs
             logsViewModel = new Logs.LogsViewModel();
         }
 
@@ -114,6 +119,7 @@ namespace DataConventer
                       }
                       catch (Exception ex)
                       {
+                          logsViewModel.AddTextToLogs("Error when select destination file. Error: " + ex);
                       }
                   }));
             }
@@ -140,7 +146,7 @@ namespace DataConventer
                       }
                       catch (Exception ex)
                       {
-                         
+                          logsViewModel.AddTextToLogs("Error when select source file. Error: " + ex);
                       }
                   }));
             }
@@ -165,6 +171,7 @@ namespace DataConventer
             Enabled = false;
             FileReader fileRedaer;
 
+            //Сreating a stream that performs data conversion
             Thread thread = new Thread(new ThreadStart(new Action(() => { fileRedaer = new FileReader(path_file_open, path_file_save, this); })));
             thread.Start();
         }
@@ -180,6 +187,7 @@ namespace DataConventer
         }
         public void ShowLogWindow()
         {
+            //Opening the logs window
             var win = new Logs.LogsWindow(logsViewModel);
             win.Show();
         }

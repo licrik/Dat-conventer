@@ -40,9 +40,9 @@ namespace DataConventer.Class
                     //Skip first bytes
                     reader.BaseStream.Seek(314, SeekOrigin.Begin);
                     PutMaxLength(reader.BaseStream.Length);
-
+                    //Сurrent file position
                     int current_length = database_list.Count * classLength;
-
+                    //Start convert bytes to class
                     while (reader.PeekChar() > -1)
                     {
                         reader.Read(array_test, current_length, classLength);
@@ -83,10 +83,11 @@ namespace DataConventer.Class
             try
             {
                 model.logsViewModel.AddTextToLogs("Start wtite in SDF file.");
-
+                //Create class who work with file
                 fileWriter = new FileWriter(sdf_file, model);
                 for (int i = 0; i < this.database_list.Count; i++)
                 {
+                    //Calling the function of recording information in the database
                     fileWriter.AddValueInDataBase(name: this.database_list[i].name, password: this.database_list[i].hashCode, group_id: this.database_list[i].Get_GroupId());
 
                     IncrementProgressBar();
@@ -98,6 +99,7 @@ namespace DataConventer.Class
             }
             finally
             {
+                //clear all connections
                 fileWriter.ConnectionClose();
                 model.Enabled = true;
                 model.logsViewModel.AddTextToLogs("End operation.");

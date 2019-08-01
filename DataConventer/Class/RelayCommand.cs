@@ -3,11 +3,11 @@ using System.Windows.Input;
 
 namespace DataConventer
 {
-    class RelayCommand : ICommand
+    public class RelayCommand : ICommand
     {
         private Action<object> execute;
+        private Action _action;
         private Func<object, bool> canExecute;
-        private Action action;
 
         public event EventHandler CanExecuteChanged
         {
@@ -20,15 +20,15 @@ namespace DataConventer
             execute = action;
         }
 
+        public RelayCommand(Action action)
+        {
+            _action = action;
+        }
+
         public RelayCommand(Action<object> execute, Func<object, bool> canExecute = null)
         {
             this.execute = execute;
             this.canExecute = canExecute;
-        }
-
-        public RelayCommand(Action action)
-        {
-            this.action = action;
         }
 
         public bool CanExecute(object parameter)
@@ -38,7 +38,14 @@ namespace DataConventer
 
         public void Execute(object parameter)
         {
-            this.execute(parameter);
+            try
+            {
+                this.execute(parameter);
+            }
+            catch
+            {
+                this._action();
+            }
         }
     }
 }

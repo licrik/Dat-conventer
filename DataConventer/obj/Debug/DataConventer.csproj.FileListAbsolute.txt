@@ -35,3 +35,4 @@ C:\Users\Admin\source\repos\licrik\Dat-conventer\DataConventer\obj\Debug\DataCon
 C:\Users\Admin\source\repos\licrik\Dat-conventer\DataConventer\obj\Debug\DataConventer.csproj.CopyComplete
 C:\Users\Admin\source\repos\licrik\Dat-conventer\DataConventer\obj\Debug\MVVMTest.exe
 C:\Users\Admin\source\repos\licrik\Dat-conventer\DataConventer\obj\Debug\MVVMTest.pdb
+C:\Users\Admin\source\repos\licrik\Dat-conventer\DataConventer\obj\Debug\DataConventer.csprojAssemblyReference.cache
